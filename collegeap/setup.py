@@ -1,20 +1,11 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
-    name='collegeap',  # The name of your package
-    version='0.1',  # Initial release version
-    description='A simple Python module for college',
-    long_description=open('README.md').read(),  # Detailed description from README file
-    long_description_content_type='text/markdown',
-    author='ap',
-    author_email='your.email@example.com',
-    url='https://github.com/clg07/collegeap',  # GitHub repository or project homepage
-    license='MIT',  # License type
-    packages=find_packages(),  # Automatically find package directories
-    classifiers=[
-        'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent',
-    ],
-    python_requires='>=3.6',  # Python version compatibility
+    name='collegeap',             # Name of your module
+    version='0.1',                # Module version
+    py_modules=['collegeap'],     # Name of your Python file (without .py extension)
+    description='A simple project for collegeap',
+    author='Your Name',           # Your name
+    url='https://github.com/clg07/collegeap',  # GitHub repository URL
+    python_requires='>=3.6',      # Minimum Python version
 )
