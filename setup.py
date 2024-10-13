@@ -16,8 +16,9 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    code=[
-        """
+     python_requires=">=3.6",
+)
+"""
         # substitusion and transposition to encrypt msg
 def encrypt(text, s):
     result = ""
@@ -138,6 +139,4 @@ try:
     print("Signature is valid.")
 except (ValueError, TypeError):
     print("Signature is invalid.")"""
-    ]
-    python_requires=">=3.6",
-)
+   
